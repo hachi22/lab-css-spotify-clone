@@ -70,24 +70,35 @@ nav a {
   color: #FFF;
 }
 
-.optionsSpotify {
-  float: left;
-  width: 10%;
-  height: 10%;
-  text-align: center;
-  margin: 5%;
+.center-2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.optionsSpotify .icons {
+.center-2 .optionsSpotify {
+  text-align: center;
+  margin: 5%;
+  width: 10%;
+  height: 10%;
+}
+
+.center-2 .optionsSpotify .icons {
   width: 100px;
   height: 100px;
 }
 
-.optionsSpotify .green-text {
+.center-2 .optionsSpotify .green-text {
   color: #00B172;
 }
 
-.optionsSpotify .description-text {
+.center-2 .optionsSpotify .description-text {
   font-size: large;
 }
 
@@ -122,11 +133,23 @@ nav a {
   padding-bottom: 1%;
 }
 
-.bg-green .spotify-logo {
+.bg-green .div-logo-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.bg-green .div-logo-1 .spotify-logo {
   width: 150px;
   height: 150px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .bg-green .div-logo {
@@ -144,9 +167,9 @@ nav a {
 }
 
 .bg-green .div-logo .app-image {
-  width: 300px;
+  width: 380px;
   padding-right: 7%;
-  height: 550px;
+  height: 600px;
   margin-top: 30px;
   padding-right: 150px;
 }
@@ -169,6 +192,14 @@ nav a {
   .app-image {
     display: none;
   }
+  .bg-green .div-logo {
+    width: 0;
+    height: 0;
+  }
+  .bg-green .div-logo-1 {
+    width: 0;
+    height: 0;
+  }
 }
 
 @media (max-width: 470px) {
@@ -177,6 +208,14 @@ nav a {
   }
   .app-image {
     display: none;
+  }
+  .bg-green .div-logo {
+    width: 0;
+    height: 0;
+  }
+  .bg-green .div-logo-1 {
+    width: 0;
+    height: 0;
   }
   .bg-green .kanye {
     font-size: 24px;
@@ -193,6 +232,33 @@ nav a {
   }
   .lettersOnImage .center-p {
     font-size: 20px;
+  }
+  .center .whats-spotify {
+    text-underline-offset: 0px;
+  }
+  .center-2 {
+    display: block;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .center-2 .optionsSpotify {
+    text-align: center;
+    margin: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
