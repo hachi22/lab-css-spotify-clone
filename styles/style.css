@@ -49,7 +49,7 @@ nav a {
 }
 
 .lettersOnImage {
-  background-image: url("/images/landing.jpg");
+  background-image: url("./images/landing.jpg");
   background-size: cover;
   height: 100vh;
   width: 100%;
